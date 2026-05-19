@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Will DiGravio</title>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#F2F0ED;--ink:#1A1916;--muted:#666360;--faint:#999691;--rule:#DDDBD7;--pill-border:#CCCAC6;--serif:'EB Garamond',Georgia,serif;--mono:'DM Mono',monospace;}
+body{font-family:var(--serif);background:var(--bg);color:var(--ink);font-size:18px;line-height:1.7;display:flex;flex-direction:column;min-height:100vh}
+nav{display:flex;justify-content:space-between;align-items:center;padding:1rem 3rem;background:var(--bg);border-bottom:1px solid var(--rule)}
+.nav-name{font-family:var(--mono);font-size:11px;letter-spacing:.09em;color:var(--faint);text-transform:uppercase;text-decoration:none}
+.nav-links{display:flex;gap:1.75rem;list-style:none}
+.nav-links a{font-family:var(--mono);font-size:10px;letter-spacing:.07em;text-transform:uppercase;color:var(--faint);text-decoration:none;transition:color .2s}
+.nav-links a:hover{color:var(--ink)}
+.hero{display:flex;align-items:flex-start;padding:2rem 3rem 3rem;flex:1}
+.hero-inner{width:100%}
+.hero-name{font-family:var(--serif);font-size:clamp(3.5rem,8vw,5.5rem);font-weight:400;line-height:.95;letter-spacing:-.025em;color:var(--ink);margin-bottom:2rem}
+.hero-bio{font-family:var(--serif);font-size:1.1rem;color:var(--muted);max-width:540px;line-height:1.8;margin-bottom:2.75rem}
+.pills{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:2.5rem}
+.pill{border-radius:999px;border:1px solid var(--pill-border);background:var(--bg);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:2rem 1.25rem;min-height:130px;transition:background .2s,border-color .2s}
+.pill:hover{background:#fff;border-color:#888580}
+.pill-title{font-family:var(--serif);font-size:1.1rem;font-weight:400;color:var(--ink);line-height:1.2;margin-bottom:.5rem;letter-spacing:-.01em}
+.pill-meta{font-family:var(--mono);font-size:7.5px;color:#888580;line-height:1.7;letter-spacing:.06em;text-transform:uppercase}
+.hero-ctas{display:flex;gap:1rem;flex-wrap:wrap}
+.btn{font-family:var(--mono);font-size:10px;letter-spacing:.09em;text-transform:uppercase;text-decoration:none;padding:.7rem 1.6rem;border:1px solid var(--ink);color:var(--ink);transition:background .2s,color .2s;display:inline-block;background:transparent}
+.btn:hover{background:var(--ink);color:var(--bg)}
+.btn-ghost{border-color:var(--pill-border);color:var(--faint)}
+.btn-ghost:hover{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+hr.rule{border:none;border-top:1px solid var(--rule);margin:0 3rem}
+footer{padding:.75rem 3rem}
+@media(max-width:700px){
+  nav,.hero{padding-left:1.25rem;padding-right:1.25rem}
+  hr.rule{margin:0 1.25rem}
+  .pills{grid-template-columns:repeat(2,1fr)}
+  .nav-links li:nth-child(n+4){display:none}
+}
+</style>
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+<body>
+<nav>
+  <a class="nav-name" href="index.html">Will DiGravio</a>
+  <ul class="nav-links">
+    <li><a href="work.html">Work</a></li>
+    <li><a href="writing.html">Writing</a></li>
+    <li><a href="scholarship.html">Scholarship</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-name">Will DiGravio</div>
+    <p class="hero-bio">Writer, researcher, critic, and scholar — working across nonfiction publishing, American history, and media studies.</p>
+    <div class="pills">
+      <div class="pill"><div class="pill-title">Historical researcher</div><div class="pill-meta">American political history · National security · Far right</div></div>
+      <div class="pill"><div class="pill-title">Fact-checker</div><div class="pill-meta">Books · Podcasts · Longform · Scientific articles</div></div>
+      <div class="pill"><div class="pill-title">Critic</div><div class="pill-meta">Film · Television · Comedy</div></div>
+      <div class="pill"><div class="pill-title">Editor</div><div class="pill-meta">Assistant editor, Cineaste magazine</div></div>
+      <div class="pill"><div class="pill-title">PhD Candidate</div><div class="pill-meta">Media studies & American studies · School for Cultural Analysis, University of Amsterdam</div></div>
+      <div class="pill"><div class="pill-title">Host</div><div class="pill-meta">The Video Essay Podcast</div></div>
+    </div>
+    <div class="hero-ctas">
+      <a href="work.html" class="btn">View work</a>
+      <a href="contact.html" class="btn btn-ghost">Get in touch</a>
+    </div>
+  </div>
+</section>
+<hr class="rule">
+<footer></footer>
+<script>if(window.netlifyIdentity){window.netlifyIdentity.on("init",user=>{if(!user){window.netlifyIdentity.on("login",()=>{document.location.href="/admin/"})}})})</script>
+</body>
+</html>

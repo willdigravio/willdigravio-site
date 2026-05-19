@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Writing — Will DiGravio</title>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#F2F0ED;--ink:#1A1916;--muted:#666360;--faint:#999691;--rule:#DDDBD7;--serif:'EB Garamond',Georgia,serif;--mono:'DM Mono',monospace;}
+body{font-family:var(--serif);background:var(--bg);color:var(--ink);font-size:18px;line-height:1.7;display:flex;flex-direction:column;min-height:100vh}
+nav{display:flex;justify-content:space-between;align-items:center;padding:1rem 3rem;background:var(--bg);border-bottom:1px solid var(--rule)}
+.nav-name{font-family:var(--mono);font-size:11px;letter-spacing:.09em;color:var(--faint);text-transform:uppercase;text-decoration:none}
+.nav-links{display:flex;gap:1.75rem;list-style:none}
+.nav-links a{font-family:var(--mono);font-size:10px;letter-spacing:.07em;text-transform:uppercase;color:var(--faint);text-decoration:none;transition:color .2s}
+.nav-links a:hover,.nav-links a.active{color:var(--ink)}
+.page-body{padding:3rem;flex:1}
+.page-title{font-size:1.85rem;font-weight:400;letter-spacing:-.01em;margin-bottom:.4rem}
+.writing-intro{color:var(--muted);font-size:.95rem;margin-bottom:2.5rem;max-width:600px;font-style:italic}
+.writing-list{display:flex;flex-direction:column}
+.writing-item{display:grid;grid-template-columns:90px 1fr 130px;align-items:baseline;gap:1.5rem;padding:1.25rem 0;border-bottom:1px solid var(--rule);text-decoration:none;color:inherit;transition:padding-left .2s}
+.writing-item:first-child{border-top:1px solid var(--rule)}
+.writing-item:hover{padding-left:.5rem}
+.writing-year{font-family:var(--mono);font-size:11px;color:var(--faint)}
+.writing-title{font-size:1rem;line-height:1.4}
+.writing-pub{font-family:var(--mono);font-size:10px;color:var(--faint);text-align:right}
+footer{padding:.75rem 3rem}
+@media(max-width:700px){nav,.page-body{padding-left:1.25rem;padding-right:1.25rem}.writing-item{grid-template-columns:60px 1fr}.writing-pub{display:none}.nav-links li:nth-child(n+4){display:none}}
+</style>
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+<body>
+<nav>
+  <a class="nav-name" href="index.html">Will DiGravio</a>
+  <ul class="nav-links">
+    <li><a href="research.html">Research services</a></li>
+    <li><a href="writing.html" class="active">Writing</a></li>
+    <li><a href="scholarship.html">Scholarship</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+<div class="page-body">
+  <div class="page-title">Writing</div>
+  <p class="writing-intro">Articles, essays, and reviews appearing in Time, Los Angeles Review of Books, Cineaste, Paste, Millennium Film Journal, and others.</p>
+  <div class="writing-list">
+    <a href="https://online.ucpress.edu/fq/article/79/3/90/217407/New-Next-Film-Festival-2025" class="writing-item" target="_blank"><span class="writing-year">2026</span><span class="writing-title">The New/Next Film Festival</span><span class="writing-pub">Film Quarterly</span></a>
+    <a href="https://www.pastemagazine.com/tv/jimmy-kimmel/late-night-last-week-jimmy-kimmel-faces-history" class="writing-item" target="_blank"><span class="writing-year">2025</span><span class="writing-title">Jimmy Kimmel Faces History</span><span class="writing-pub">Paste</span></a>
+    <a href="https://www.pastemagazine.com/tv/michael-kosta/michael-kosta-lucky-loser-comedy-profile-daily-show" class="writing-item" target="_blank"><span class="writing-year">2025</span><span class="writing-title">Interview: Michael Kosta is An Empathetic Jock Ready to Spoof Our Time</span><span class="writing-pub">Paste</span></a>
+    <a href="https://www.cineaste.com/winter2024/lee" class="writing-item" target="_blank"><span class="writing-year">2025</span><span class="writing-title">Review of Lee (2024)</span><span class="writing-pub">Cineaste</span></a>
+    <a href="https://www.cineaste.com/winter2025/the-63rd-new-york-film-festival" class="writing-item" target="_blank"><span class="writing-year">2025</span><span class="writing-title">The 63rd New York Film Festival</span><span class="writing-pub">Cineaste</span></a>
+    <a href="https://millenniumfilmjournal.com/los-angeles-mills-moon-digravio/" class="writing-item" target="_blank"><span class="writing-year">2025</span><span class="writing-title">Prismatic Ground: Los Angeles, The Mills, and A Moon</span><span class="writing-pub">Millennium Film Journal</span></a>
+    <a href="https://www.cineaste.com/spring2025/around-the-clock-on-an-overnight-at-moma" class="writing-item" target="_blank"><span class="writing-year">2025</span><span class="writing-title">Around The Clock: On an Overnight at MoMA</span><span class="writing-pub">Cineaste</span></a>
+    <a href="https://time.com/7260458/best-stand-up-specials-netflix/" class="writing-item" target="_blank"><span class="writing-year">2025</span><span class="writing-title">The 25 Best Stand-up Specials on Netflix</span><span class="writing-pub">Time</span></a>
+    <a href="https://lareviewofbooks.org/article/an-act-of-transgression/" class="writing-item" target="_blank"><span class="writing-year">2024</span><span class="writing-title">Martin & Lewis: An Act of Transgression</span><span class="writing-pub">LARB</span></a>
+    <a href="https://time.com/7096089/hasan-minhaj-off-with-his-head-netflix/" class="writing-item" target="_blank"><span class="writing-year">2024</span><span class="writing-title">A New Special Finds Hasan Minhaj Ready to Move Past the Backlash</span><span class="writing-pub">Time</span></a>
+    <a href="https://www.pastemagazine.com/comedy/conner-omalley/conner-omalleys-rap-world-is-the-manic-movie-of-the-summer" class="writing-item" target="_blank"><span class="writing-year">2024</span><span class="writing-title">Conner O'Malley's Rap World Is the Manic Movie of the Summer</span><span class="writing-pub">Paste</span></a>
+    <a href="https://www.pastemagazine.com/comedy/elaine-may/elaine-mays-shaping-of-american-comedy-chronicled-in-essential-new-biography" class="writing-item" target="_blank"><span class="writing-year">2024</span><span class="writing-title">Elaine May's Shaping of American Comedy Chronicled in Essential New Biography</span><span class="writing-pub">Paste</span></a>
+    <a href="#" class="writing-item"><span class="writing-year">2024</span><span class="writing-title">Manhattan, Mattel, & the Democratic Myths of America</span><span class="writing-pub">Monochromator</span></a>
+    <a href="https://www.pastemagazine.com/movies/jane-schoenbrun/jane-schoenbrun-a-self-induced-hallucination-the-school-is-watching-remix-culture" class="writing-item" target="_blank"><span class="writing-year">2024</span><span class="writing-title">Watching Watchers Watch: On the Early Films of Jane Schoenbrun</span><span class="writing-pub">Paste</span></a>
+    <a href="https://www.cineaste.com/winter2024/new-york-film-festival-2024" class="writing-item" target="_blank"><span class="writing-year">2024</span><span class="writing-title">The 2024 New York Film Festival</span><span class="writing-pub">Cineaste</span></a>
+    <a href="https://crookedmarquee.com/the-best-man-at-60-when-hollywood-said-homosexual/" class="writing-item" target="_blank"><span class="writing-year">2024</span><span class="writing-title">The Best Man at 60: When Hollywood Said 'Homosexual'</span><span class="writing-pub">Crooked Marquee</span></a>
+    <a href="https://crookedmarquee.com/the-dark-ocean-endures-finding-nemo-at-20/" class="writing-item" target="_blank"><span class="writing-year">2023</span><span class="writing-title">The Dark Ocean Endures: Finding Nemo at 20</span><span class="writing-pub">Crooked Marquee</span></a>
+  </div>
+</div>
+<footer></footer>
+<script>if(window.netlifyIdentity){window.netlifyIdentity.on("init",user=>{if(!user){window.netlifyIdentity.on("login",()=>{document.location.href="/admin/"})}})})</script>
+</body>
+</html>
